@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&family=Poppins&display=swap');
+
+head, body {
+    font-family: 'Poppins', sans-serif;
+    color: #222222;
+}
+
+.header {
+    height: 20vh;
+    background: linear-gradient(to bottom right, white, gray);
+    font-size: 3rem;
+    box-sizing: border-box;
+    text-align: center;
+    padding-right: 30px;
+    position: relative;
+}
+
+.logo {
+    height: 100%;
+    display: inline-block;
+    float: left;
+    transform: translateX(10vw);
+}
+
+.title {
+    display: inline-block;
+    margin: auto;
+    transform: translateY(4rem);
+    font-weight: 700;
+    text-shadow: 1px 1px 10px gray;
+}
+
+footer {
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+    padding: 2rem;
+}
+
+footer a {
+    color: #d5d5d5;
+    text-decoration: underline;
+}
+
+hr.light {
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+}
+
+footer a:hover {
+    color: orange;
+}
+
+.col-12 {
+    text-align: center;
+    padding:2rem;
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+}
+
+#root {
+    margin-bottom: 8vh;
+}
+
