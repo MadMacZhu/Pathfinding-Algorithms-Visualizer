@@ -1,0 +1,88 @@
+.button-container {
+  display: inline-block;
+  width: 15vw;
+  height: 80vh;
+  position: relative;
+  text-align: center;
+  margin: 25px 50px;
+}
+
+.button-title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-shadow: 1px 1px 8px gray;
+}
+
+button {
+  margin-top: 5vh;
+}
+
+/* button {
+  display: inline-block;
+  margin: 10px 15px;
+  height: 2.5rem;
+  font-size-adjust: inherit;
+  border-radius: 10px;
+} */
+
+.grid-container {
+  position: absolute;
+  width: 75vw;
+  height: 75vh;
+  border: 2px solid green;
+  border-radius: 30px;
+  display: inline-block;
+  background-origin: border-box;
+  padding: 5vh 5vw;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.grid {
+  display: inline-block;
+}
+
+.legend{
+  width: 75vw;
+  height: 5vh;
+  display: block;
+  margin: 3.5vh 10vw;
+  padding-bottom: 2vh;
+  text-align: center;
+}
+
+.legend > p{
+  display: inline-block;
+  font-size: 2rem;
+  margin: 1vh .5vw;
+}
+
+.node-example1 {
+  width: 1.5vw;
+  height: 2.95vh;
+  margin: auto 1vw;
+  border: 1px solid rgb(175, 216, 248);
+  border-radius: 50%;
+  display: inline-block;
+  background: radial-gradient(circle, rgba(77,127,217,1) 0%, rgba(77,127,217,1) 50%, rgba(219,247,242,1) 100%);
+}
+
+.node-example2 {
+  width: 1.5vw;
+  height: 2.95vh;
+  margin: auto 1vw;
+  border: 1px solid rgb(175, 216, 248);
+  border-radius: 50%;
+  display: inline-block;
+  background: radial-gradient(circle, red 0%, red 25%, gold 100%);
+}
+
+.node-example3 {
+  width: 1.5vw;
+  height: 2.95vh;
+  margin: auto 1vw;
+  border: 1px solid rgb(175, 216, 248);
+  border-radius: 50%;
+  display: inline-block;
+  background-color: rgb(12, 53, 71);
+}
