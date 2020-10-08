@@ -2,6 +2,8 @@
 
 本项目的灵感主要来自于：1. 本人在美教学时曾教过离散数学课程，其中有两章图论内容，详细介绍了几种路径搜索算法；2. 出现在2014年的一篇很有影响力的文章《[算法的视觉化](https://bost.ocks.org/mike/algorithms/)》。这个网页应用的后端架构是用JavaScript完成的，主要使用了一个JSON对象作为节点背后的数据结构，实现了三种常用的路径搜索算法：德克斯特拉算法、A\*路径算法、广度优先搜索算法。前端布局是建立在[Bootstrap](https://getbootstrap.com/)的模板之上，当然也外加了不少自己编写的HTML5和CSS3的语句，例如圆形节点是用CSS3编写的。
 
+**`应用网址`**：https://madmaczhu.github.io/Pathfinding-Algorithms-Visualizer/
+
 ## 算法简介
 
 **`德克斯特拉算法`**（Dijkstra's Algorithm）：原本属于加权图的路径搜索算法，本应用中认为水平、竖直方向相邻的节点间距离均为1；在搜索过程中需要不断依据未访问节点的已知距离进行“堆排序”（Heap Sort）， 其时间复杂度为O(nlogn)， 具体介绍见[这里](https://zhuanlan.zhihu.com/p/40338107)。
