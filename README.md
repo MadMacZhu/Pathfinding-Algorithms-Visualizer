@@ -1,68 +1,26 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 项目简介
 
-## Available Scripts
+本项目的灵感主要来自于：1. 本人在美教学时曾教过离散数学课程，其中有两章图论内容，详细介绍了几种路径搜索算法；2. 出现在2014年的一篇很有影响力的文章《[算法的视觉化](https://bost.ocks.org/mike/algorithms/)》。这个网页应用的后端架构是用JavaScript完成的，主要使用了一个JSON对象作为节点背后的数据结构，实现了三种常用的路径搜索算法：德克斯特拉算法、A\*路径算法、广度优先搜索算法。前端布局是建立在[Bootstrap](https://getbootstrap.com/)的模板之上，当然也外加了不少自己编写的HTML5和CSS3的语句，例如圆形节点是用CSS3编写的。
 
-In the project directory, you can run:
+## 算法简介
 
-### `npm start`
+**`德克斯特拉算法`**（Dijkstra's Algorithm）：原本属于加权图的路径搜索算法，本应用中认为水平、竖直方向相邻的节点间距离均为1；在搜索过程中需要不断依据未访问节点的已知距离进行“堆排序”（Heap Sort）， 其时间复杂度为O(nlogn)， 具体介绍见[这里](https://zhuanlan.zhihu.com/p/40338107)。
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**`A\*路径算法`**（A\*Path Algorithm）: 在德克斯特拉算法的基础上进行了改进，在已知距离的基础上增加了一个H值（这里我使用的是曼哈顿距离），形成了新的F值，使得在已知目的地位置的前提下将搜索速度提高了很多；在搜索过程中需要不断依据未访问节点的已知F值进行“堆排序”（Heap Sort），其时间复杂度为O(nlogn)， 具体介绍见[这里](https://zhuanlan.zhihu.com/p/113008274)。
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+**`广度优先搜索`**（Bubble Sort）: 针对非加权图的路径搜索算法，相对简单，无需排序，运行很快，只需要队列这种数据结构即可实现，具体介绍见[这里](https://blog.csdn.net/raphealguo/article/details/7523411)。
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 操作提示：
 
-### `npm run build`
+**提示1**：左键单击可以增加“壁垒”节点，路径搜索过程中会主动绕开这些节点。
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img display="block" margin="auto" title="Step1" alt="Step1" width="800px" src="https://github.com/MadMacZhu/Sorting-Algorithms-Visualizer/blob/master/public/step1.png" />
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+**提示2**：目前版本中，起始和终点节点都尚不能调整，未来版本中会增加这项功能。
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## 附注：
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+这个项目是使用了 [Create React App](https://github.com/facebook/create-react-app) 的网络框架实现的。
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
