@@ -15,7 +15,7 @@
 
 **提示1**：左键单击可以增加“壁垒”节点，路径搜索过程中会主动绕开这些节点。
 
-<img display="block" margin="auto" title="Step1" alt="Step1" width="800px" src="https://github.com/MadMacZhu/Sorting-Algorithms-Visualizer/blob/master/public/step1.png" />
+<img display="block" margin="auto" title="Wall" alt="Wall" width="800px" src="https://github.com/MadMacZhu/Pathfinding-Algorithms-Visualizer/blob/master/public/wall.png" />
 
 **提示2**：目前版本中，起始和终点节点都尚不能调整，未来版本中会增加这项功能。
 
