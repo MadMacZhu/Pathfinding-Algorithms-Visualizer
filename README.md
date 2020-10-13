@@ -10,7 +10,7 @@
 
 **`A\*路径算法`**（A\*Path Algorithm）: 在德克斯特拉算法的基础上进行了改进，在已知距离的基础上增加了一个H值（这里我使用的是曼哈顿距离），形成了新的F值，使得在已知目的地位置的前提下将搜索速度提高了很多；在搜索过程中需要不断依据未访问节点的已知F值进行“堆排序”（Heap Sort），其时间复杂度为O(nlogn)， 具体介绍见[这里](https://zhuanlan.zhihu.com/p/113008274)。
 
-**`广度优先搜索`**（Bubble Sort）: 针对非加权图的路径搜索算法，相对简单，无需排序，运行很快，只需要队列这种数据结构即可实现，具体介绍见[这里](https://blog.csdn.net/raphealguo/article/details/7523411)。
+**`广度优先搜索`**（Breadth First Search）: 针对非加权图的路径搜索算法，相对简单，无需排序，运行很快，只需要队列这种数据结构即可实现，具体介绍见[这里](https://blog.csdn.net/raphealguo/article/details/7523411)。
 
 
 ## 操作提示：
